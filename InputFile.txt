@@ -1,0 +1,23 @@
+node_types: Instructor,Course,University
+edge_types: Course 'taughtBy' Instructor, Course 'offerIn' University, Instructor 'worksIn' University
+num_nodes: 200
+num_edges: 5000
+
+node_attributes:
+Instructor:
+ service: random_range, 5, 30
+ domain: predefined_set, AI, ML, DataMining
+Course:
+ level: random_range, 1, 5
+ mode: predefined_set, offline, online 
+University:
+ utype: predefined_set, International, Public, Private
+ rank: random_range, 1, 100
+
+edge_attributes:
+taughtBy:
+ noofTimes: random_range, 1, 10
+offerIn:
+ certification: predefined_set, offline, online
+worksIn:
+ years: random_range, 1, 30
