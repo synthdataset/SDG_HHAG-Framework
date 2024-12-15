@@ -1,4 +1,4 @@
-# SDG_HHAG-Framework
+# SDG_HHAG Framework
 This repository provides an implementation of both Synthetic Homogeneous and Heterogeneous Attributed Graphs.
 
 ## Create the Environment:
